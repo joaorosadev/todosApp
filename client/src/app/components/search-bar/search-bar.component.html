@@ -1,0 +1,10 @@
+<div>
+    <input type="text" 
+           name="description" 
+           placeholder="Search a task..." 
+           autocomplete="off" 
+           onfocus="this.placeholder=''" 
+           onblur="this.placeholder = 'Search a task...'"
+           [(ngModel)]="description" 
+           (keyup)="keyUp()"/>
+</div>

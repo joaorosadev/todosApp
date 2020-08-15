@@ -1,0 +1,7 @@
+<div class="myDiv">
+    <input (change)="onPress(task)" [checked]="task.done" type="checkbox" />
+    <p [ngClass]="lineThroughIfDone()">{{ task.description }}</p>
+    <button (click)="onDelete(task)" class="delete">Delete</button>
+</div>
+
+

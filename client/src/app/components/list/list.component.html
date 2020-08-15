@@ -1,0 +1,16 @@
+<div>
+  <h1>Todo List Application</h1>
+  <app-search-bar (filterTasks)="filterTasks($event)"></app-search-bar>
+  <app-add-task (addTask)="addTask($event)"></app-add-task>
+
+  <div id="error-div">
+    The task's description must not be empty and have a maximum of 40 characters.
+  </div>
+
+  <app-ordering (orderedList)="receiveOrderedList($event)" [todos]="todosList"></app-ordering>
+
+  <app-task *ngFor="let task of todosList"
+            [task]="task"
+            (deleteTask)="deleteTask($event)">
+  </app-task>
+</div>

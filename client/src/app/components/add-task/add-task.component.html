@@ -1,0 +1,12 @@
+<div>
+    <form (ngSubmit)="onSubmit()">
+        <input type="text" 
+               name="description" 
+               placeholder="Add a task..." 
+               autocomplete="off" 
+               onfocus="this.placeholder=''" 
+               onblur="this.placeholder = 'Add a task...'"
+               [(ngModel)]="description"/>
+        <input type="submit" value="Submit" class="btn">
+    </form>
+</div>

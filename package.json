@@ -1,0 +1,21 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "Angular + nodejs (hapi) todo list",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "João Rosa",
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/hapi": "^19.2.0",
+    "@hapi/inert": "^6.0.1",
+    "@hapi/joi": "^17.1.1",
+    "@types/jquery": "^3.5.1",
+    "blipp": "github:danielb2/blipp",
+    "hapi": "^18.1.0",
+    "hapi-plugin-traffic": "^1.1.2",
+    "hapi-sanitize-payload": "github:lob/hapi-sanitize-payload"
+  }
+}
